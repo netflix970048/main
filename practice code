@@ -1,1 +1,38 @@
+# todo_v1.py
 
+tasks = []
+
+def add_task():
+    task = input("Enter a new task: ")
+    tasks.append(task)
+    print("Task added.")
+
+def view_tasks():
+    if not tasks:
+        print("No tasks available.")
+    else:
+        print("Your Tasks:")
+        for i, task in enumerate(tasks, 1):
+            print(f"{i}. {task}")
+
+def main():
+    while True:
+        print("\n--- To-Do List v1 ---")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Exit")
+
+        choice = input("Choose an option: ")
+
+        if choice == '1':
+            add_task()
+        elif choice == '2':
+            view_tasks()
+        elif choice == '3':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice.")
+
+if __name__ == "__main__":
+    main()
