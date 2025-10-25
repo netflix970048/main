@@ -1,38 +1,52 @@
-# todo_v1.py
-
-tasks = []
-
-def add_task():
-    task = input("Enter a new task: ")
-    tasks.append(task)
-    print("Task added.")
-
-def view_tasks():
-    if not tasks:
-        print("No tasks available.")
-    else:
-        print("Your Tasks:")
-        for i, task in enumerate(tasks, 1):
-            print(f"{i}. {task}")
-
-def main():
-    while True:
-        print("\n--- To-Do List v1 ---")
-        print("1. Add Task")
-        print("2. View Tasks")
-        print("3. Exit")
-
-        choice = input("Choose an option: ")
-
-        if choice == '1':
-            add_task()
-        elif choice == '2':
-            view_tasks()
-        elif choice == '3':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice.")
-
-if __name__ == "__main__":
-    main()
+[
+  {
+    "id": 1,
+    "title": "Edge of Tomorrow",
+    "year": 2014,
+    "genre": ["Action", "Sci-Fi"],
+    "overview": "A soldier fighting aliens gets to relive the same day over and over, the day restarting every time he dies.",
+    "poster": "https://picsum.photos/seed/movie1/300/450",
+    "backdrop": "https://picsum.photos/seed/back1/1200/500",
+    "rating": 7.9
+  },
+  {
+    "id": 2,
+    "title": "Midnight Escape",
+    "year": 2019,
+    "genre": ["Thriller"],
+    "overview": "A group of friends become trapped in a puzzle-like escape room with a sinister host.",
+    "poster": "https://picsum.photos/seed/movie2/300/450",
+    "backdrop": "https://picsum.photos/seed/back2/1200/500",
+    "rating": 6.8
+  },
+  {
+    "id": 3,
+    "title": "Lost in Tokyo",
+    "year": 2021,
+    "genre": ["Drama", "Romance"],
+    "overview": "Two strangers meet in Tokyo and discover their lives unexpectedly intertwined.",
+    "poster": "https://picsum.photos/seed/movie3/300/450",
+    "backdrop": "https://picsum.photos/seed/back3/1200/500",
+    "rating": 7.2
+  },
+  {
+    "id": 4,
+    "title": "Space Harvest",
+    "year": 2023,
+    "genre": ["Sci-Fi", "Adventure"],
+    "overview": "A crew travels beyond the edges of known space to harvest an energy source—and discovers more than they bargained for.",
+    "poster": "https://picsum.photos/seed/movie4/300/450",
+    "backdrop": "https://picsum.photos/seed/back4/1200/500",
+    "rating": 8.1
+  },
+  {
+    "id": 5,
+    "title": "Comedy Nights",
+    "year": 2017,
+    "genre": ["Comedy"],
+    "overview": "A struggling stand-up comedian finds unexpected success after uploading a video online.",
+    "poster": "https://picsum.photos/seed/movie5/300/450",
+    "backdrop": "https://picsum.photos/seed/back5/1200/500",
+    "rating": 6.4
+  }
+]
